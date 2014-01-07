@@ -237,6 +237,7 @@ $("#new_game").click(function (event)
     if (reply) 
     {
         var game = CU.Sudoku.generate();
+        gameGrid = game.toArray();
         var difficulty = document.getElementById("difficulty");
         CU.Sudoku.cull(game,difficulty.value);
         LoadGame(game.toArray());
