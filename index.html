@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div data-role="page" id="sudoku_page">
+      <div data-role="content" >
+      <table class="menu">
+	  <tr>
+	  <td>
+	    <select class="difficulty" name="difficulty" id="difficulty" onchange="handleDiff(this.value)">
+          <option value="default" >Select difficulty</option>
+		  <option value="30">Very Easy</option>
+          <option value="40">Easy</option>
+          <option value="55">Normal</option>
+          <option value="60">Hard</option>
+          <option value="65">Extra Hard</option>
+          <option value="3">Test</option>
+        </select>
+      </td>
+	  <td><img class="icon" src="img/new.png" id="new_game"></td><td><img class="icon" src="img/check.png" id="check"></td><td><img class="icon" src="img/reset.png" id="clear"></td><td><img class="icon2" src="img/solve.png" id="solve"></td><td><text class = "time" id ="time"></text></td>
+	  </tr>
+	  </table>
+  
+      <div id="grid">
+      </div>
+  
+      <table class="keyboard" >
+      <tr>
+        <td><div id="k0">&nbsp;</div></td><td ><div id="k1">&nbsp;</div></td><td><div id="k2">&nbsp;</div></td><td ><div id="k3">&nbsp;</div></td><td ><div id="k4">&nbsp;</div></td><td ><div id="k5">&nbsp;</div></td><td ><div id="k6">&nbsp;</div></td><td ><div id="k7">&nbsp;</div></td><td ><div id="k8">&nbsp;</div></td><td ><div id="k9">&nbsp;</div></td>
+      </tr>
+      </table>
+   
+      </div>  
+    </div>
+  
+    <script src="js/jquery-1.4.js" > </script>
+    <script src="js/sudokuMain.js" > </script>
+    <script src="js/sudoku.js"></script>
+  
+  </body>
+</html>

@@ -1,0 +1,126 @@
+.sudoku
+{
+    border: 2px solid #000;
+    width: 600px;
+    height: 600px;
+    text-align:left;
+    margin-top: 10px;
+}
+
+.sudoku tr
+{
+    border: 1px solid #ccc;
+}
+
+.sudoku td
+{
+    border: 2px solid #ccc;
+    border-collapse: collapse;
+    padding: 0px;
+    margin: 0px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+
+.sudoku td div
+{
+    display: table-cell;
+    width: 60px;
+    height: 60px;
+    text-align: middle;
+    vertical-align: middle;
+    font-size: 3em;
+}
+
+.sudoku .c3,
+.sudoku .c6
+{
+    border-left: 2px solid #000
+}
+
+.sudoku .r3 td,
+.sudoku .r6 td
+{
+    border-top: 2px solid #000
+}
+
+.keyboard
+{
+    background-color: 'white';
+    border: 2px solid #000;
+    width: 600px;
+    text-align: center;
+    margin-top: 25px;
+}
+.keyboard tr
+{
+    border: 1px solid #ccc;
+}
+
+.keyboard td
+{
+    border: 1px solid #ccc;
+    padding: 0;
+    text-align: center;
+    opacity: 0.8;
+    background-color: "white";
+    width: 10%;
+    height: 6px;
+}
+.keyboard div 
+{
+    background-color: "white";
+}
+
+.icon
+ {
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 24px; 
+    max-width: 24px;
+}
+
+.icon2
+ {
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 30px; 
+    max-width: 30px;
+}
+
+.menu
+{
+    width: 600px;
+    height: 30px;
+}
+
+.menu td
+{
+    padding: 0;
+    text-align: center;
+    opacity: 0.8;
+    width: 10%;
+    height: 6px;
+}
+
+.time
+{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.difficulty
+{
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    vertical-align: middle;
+    text-align: left;
+    padding: 2px;
+    width: 240px;
+    height: 28px;
+    background: url(../img/arrow.png) no-repeat right #ddd;
+}
