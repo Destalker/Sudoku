@@ -1,4 +1,4 @@
-    
+/**
  * Sudoku generator + Sudoku grid classes
  * 
  * @author Jani Hartikainen <firstname at codeutopia net>
@@ -8,7 +8,7 @@ if(!CU)
     var CU = { };
 
 CU.Sudoku = {
-        
+    /**
      * Generate a CU.sudoku.Grid
      * @return CU.sudoku.Grid a new random sudoku puzzle
      */
@@ -63,7 +63,7 @@ CU.Sudoku = {
         return grid;
     },
     
-        
+    /**
      * Clear N cells from the sudoku grid randomly
      * @param {CU.sudoku.Grid} grid
      * @param {Number} amount
@@ -87,7 +87,7 @@ CU.Sudoku = {
 
 CU.sudoku = { };
 
-    
+/**
  * A class for representing sudoku puzzle grids
  * @constructor
  */
@@ -106,7 +106,7 @@ CU.sudoku.Grid = function() {
 CU.sudoku.Grid.prototype = {
     rows: [],
     
-        
+    /**
      * Return value of a col,row in the grid
      * @method
      * @param {Number} col
@@ -117,7 +117,7 @@ CU.sudoku.Grid.prototype = {
         return this.rows[row][col];
     },
     
-        
+    /**
      * Set value of col,row in the grid.
      * @method
      * @param {Number} column
@@ -128,7 +128,7 @@ CU.sudoku.Grid.prototype = {
         this.rows[row][column] = value;
     },
 
-        
+    /**
      * Does a specific cell conflict with another?
      * @method
      * @param {Number} column
@@ -158,7 +158,7 @@ CU.sudoku.Grid.prototype = {
         return !this._miniGridValid(column, row);
     },
     
-        
+    /**
      * Checks if the inner 3x3 grid a cell resides in is valid
      * @method
      * @private
@@ -196,7 +196,7 @@ CU.sudoku.Grid.prototype = {
         return true;
     },
     
-        
+    /**
      * Return a string representation of the grid.
      * @method
      * @return {String}
@@ -211,7 +211,7 @@ CU.sudoku.Grid.prototype = {
         return str;
     },
     
-        
+    /**
      * Return the puzzle as an array, for example for saving
      * @method
      * @return {Array}
@@ -227,7 +227,7 @@ CU.sudoku.Grid.prototype = {
         return cells;
     },
     
-        
+    /**
      * Fill the puzzle from an array
      * @method
      * @param {Array} cells
